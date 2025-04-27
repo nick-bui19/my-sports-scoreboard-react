@@ -15,6 +15,10 @@ function App() {
         <h2>Live Moments</h2>
         <LiveScoreCard />
       </section>
+      <section className="today-section">
+        <h2>Today's Matches</h2>
+        <TodayMatches />
+      </section>
     </div>
   );
 }
