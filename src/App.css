@@ -66,18 +66,21 @@ body {
 
 /* Button */
 .live-card button {
-  margin-top: 10px;
-  background-color: #CCFF00;
-  border: none;
-  padding: 8px 16px;
+  display: block;           /* Forces button to sit on its own line */
+  margin: 15px auto 0;      /* Centers it horizontally, adds top margin */
+  background-color: #fff;   /* White background */
+  color: #000;              /* Black text */
+  border: 2px solid #CCFF00; /* Tennis ball green border */
+  padding: 10px 20px;
   cursor: pointer;
   font-weight: bold;
-  border-radius: 5px;
-  transition: background 0.3s;
+  border-radius: 6px;
+  transition: all 0.3s;
 }
 
 .live-card button:hover {
-  background-color: #b3e600;
+  background-color: #CCFF00;
+  color: #000;
 }
 
 /* Today's Matches */
