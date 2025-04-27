@@ -1,7 +1,7 @@
 import React from 'react';
 
 const matches = [
-  { team1: 'Bayern', score1: 1, team2: 'Mainz 05', score2: 0, status: '1st • 03:13' },
+  { team1: 'Vietnam', score1: 3, team2: 'Thailand', score2: 2, status: 'FT' },
   { team1: 'Germany', score1: 0, team2: 'Spain', score2: 0, status: 'FT' }
 ];
 
