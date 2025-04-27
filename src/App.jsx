@@ -11,6 +11,10 @@ function App() {
   return (
     <div className="App">
       <Header />
+      <section className="live-section">
+        <h2>Live Moments</h2>
+        <LiveScoreCard />
+      </section>
     </div>
   );
 }
