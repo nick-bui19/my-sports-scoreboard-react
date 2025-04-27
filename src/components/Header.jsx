@@ -3,7 +3,9 @@ import React from 'react';
 function Header() {
   return (
     <header className="app-header">
-      <h1>🏅 Nick's Sports Hub</h1>
+      <h1>
+        My Personal Sports Hub
+      </h1>
     </header>
   );
 }

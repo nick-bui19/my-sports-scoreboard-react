@@ -8,17 +8,19 @@ import './App.css'
 
 function App() {
   return (
-    <div className="App">
+    <>
       <Header />
-      <section className="live-section">
-        <h2>Live Moments</h2>
-        <LiveScoreCard />
-      </section>
-      <section className="today-section">
-        <h2>Today's Matches</h2>
-        <TodayMatches />
-      </section>
-    </div>
+      <div className="App">
+        <section className="section">
+          <h2>Live Moments</h2>
+          <LiveScoreCard />
+        </section>
+        <section className="section">
+          <h2>Today's Matches</h2>
+          <TodayMatches />
+        </section>
+      </div>
+    </>
   );
 }
 

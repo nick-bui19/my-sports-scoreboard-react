@@ -1,35 +1,70 @@
+/* Reset & Base Layout */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #000;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
 body {
-  margin: 0;
-  font-family: 'Arial', sans-serif;
+  font-family: 'Poppins', sans-serif;
   background-color: #ffffff;
-  color: #333;
+  color: #222;
 }
 
+
+/* Header */
 .app-header {
-  background-color: #CCFF00;  /* Tennis ball yellow */
-  padding: 20px;
+  width: 100%;
   text-align: center;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  background-color: #CCFF00;   /* Tennis ball yellow */
+  padding: 20px 40px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-h1 {
-  margin: 0;
+.app-header h1 {
+  font-size: 2.5rem;
 }
 
-.live-section, .today-section {
-  padding: 20px;
+/* Main App Container */
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
 
+/* Sections */
+.section {
+  width: 100%;
+  max-width: 800px;
+  text-align: center;
+  padding: 30px 20px; /*section spacing */
+}
+
+
+/* Live Score Card */
 .live-card {
+  margin: 20px auto;  
   background: #fff;
   border: 2px solid #CCFF00;
-  padding: 15px;
-  margin: 10px auto;
+  padding: 20px;
   width: 300px;
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
+
+/* Button */
 .live-card button {
   margin-top: 10px;
   background-color: #CCFF00;
@@ -37,8 +72,15 @@ h1 {
   padding: 8px 16px;
   cursor: pointer;
   font-weight: bold;
+  border-radius: 5px;
+  transition: background 0.3s;
 }
 
+.live-card button:hover {
+  background-color: #b3e600;
+}
+
+/* Today's Matches */
 .today-matches {
   max-width: 400px;
   margin: auto;
